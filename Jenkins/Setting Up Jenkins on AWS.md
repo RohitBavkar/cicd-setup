@@ -21,7 +21,7 @@
 1. Jenkins need Java
 
     ```bash
-    sudo dnf install java-11-openjdk/co
+    sudo dnf install java-11-openjdk
     ```
 
 
@@ -36,13 +36,13 @@
     ```
 
     ```bash
-    sudo wget -O /etc/yum.repos.d/jenkins.repo [https://pkg.jenkins.io/redhat-stable/jenkins.repo](https://pkg.jenkins.io/redhat-stable/jenkins.repo)
+    sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
     ```
 
 2. Get Jenkins Key
 
     ```bash
-    sudo rpm --import [https://pkg.jenkins.io/redhat-stable/jenkins.io.key](https://pkg.jenkins.io/redhat-stable/jenkins.io.key)
+    sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
     ```
 
 3. Upgrade your system to the current release of Fedora
@@ -107,3 +107,4 @@
    Reason -> Java 8 or Java 11 are required for running modern versions of Jenkins.
 
    Solution -> Switched to Java 11.
+2. swap guide - https://linuxize.com/post/create-a-linux-swap-file/
